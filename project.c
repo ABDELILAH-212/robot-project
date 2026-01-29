@@ -34,6 +34,12 @@ void tourne_droite() {
     digitalWrite(gouche_mt1, HIGH);
     digitalWrite(gouche_mt2, LOW);
 }
+void tourne_gauche() {
+    digitalWrite(droite_mt1, HIGH);
+    digitalWrite(droite_mt2, LOW);
+    digitalWrite(gouche_mt1, LOW);
+    digitalWrite(gouche_mt2, LOW);
+}
 void demi_toure_droite() {
     digitalWrite(droite_mt1, LOW);
     digitalWrite(droite_mt2, HIGH);
@@ -45,13 +51,6 @@ void demi_toure_gauche() {
     digitalWrite(droite_mt2, LOW);
     digitalWrite(gouche_mt1, LOW);
     digitalWrite(gouche_mt2, HIGH);
-}
-
-void tourne_gauche() {
-    digitalWrite(droite_mt1, HIGH);
-    digitalWrite(droite_mt2, LOW);
-    digitalWrite(gouche_mt1, LOW);
-    digitalWrite(gouche_mt2, LOW);
 }
 
 void stop_robot() {
@@ -88,4 +87,4 @@ void loop() {
 
 
 
-commit message
+
