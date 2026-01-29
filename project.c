@@ -34,6 +34,18 @@ void tourne_droite() {
     digitalWrite(gouche_mt1, HIGH);
     digitalWrite(gouche_mt2, LOW);
 }
+void demi_toure_droite() {
+    digitalWrite(droite_mt1, LOW);
+    digitalWrite(droite_mt2, HIGH);
+    digitalWrite(gouche_mt1, HIGH);
+    digitalWrite(gouche_mt2, LOW);
+}
+void demi_toure_gauche() {
+    digitalWrite(droite_mt1, HIGH);
+    digitalWrite(droite_mt2, LOW);
+    digitalWrite(gouche_mt1, LOW);
+    digitalWrite(gouche_mt2, HIGH);
+}
 
 void tourne_gauche() {
     digitalWrite(droite_mt1, HIGH);
@@ -69,6 +81,11 @@ void loop() {
         tourne_gauche();
     }
     else if (d_ir1 && d_ir2 && g_ir1 && g_ir2) {
-        stop_robot();
+        demi_toure_droite();
+        delay(700);
     }
 }
+
+
+
+commit message
