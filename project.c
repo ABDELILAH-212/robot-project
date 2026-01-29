@@ -34,6 +34,7 @@ void tourne_droite() {
     digitalWrite(gouche_mt1, HIGH);
     digitalWrite(gouche_mt2, LOW);
 }
+<<<<<<< HEAD
 void demi_toure_droite() {
     digitalWrite(droite_mt1, LOW);
     digitalWrite(droite_mt2, HIGH);
@@ -47,11 +48,25 @@ void demi_toure_gauche() {
     digitalWrite(gouche_mt2, HIGH);
 }
 
+=======
+>>>>>>> 4527a3afadeca9ef15c4a8a6a11f6295f26fb6b9
 void tourne_gauche() {
     digitalWrite(droite_mt1, HIGH);
     digitalWrite(droite_mt2, LOW);
     digitalWrite(gouche_mt1, LOW);
     digitalWrite(gouche_mt2, LOW);
+}
+void demi_toure_droite() {
+    digitalWrite(droite_mt1, LOW);
+    digitalWrite(droite_mt2, HIGH);
+    digitalWrite(gouche_mt1, HIGH);
+    digitalWrite(gouche_mt2, LOW);
+}
+void demi_toure_gauche() {
+    digitalWrite(droite_mt1, HIGH);
+    digitalWrite(droite_mt2, LOW);
+    digitalWrite(gouche_mt1, LOW);
+    digitalWrite(gouche_mt2, HIGH);
 }
 
 void stop_robot() {
@@ -85,3 +100,7 @@ void loop() {
         delay(700);
     }
 }
+
+
+
+
